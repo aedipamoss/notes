@@ -1,0 +1,10 @@
+title: "TODO: Add a title"
+description: "TODO: Add a description"
+link: "TODO: Add a homepage url"
+source: src
+output: out
+assets:
+  css:
+    - style.css
+  images:
+    - bg.png

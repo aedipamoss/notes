@@ -1,0 +1,18 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    color: #3c3c3c;
+    font-family: mono;
+    line-height: 1.5;
+    font-size: 100%;
+}
+
+a:link, a:visited {
+  color: #47909b;
+}
+
+a:hover, a:active {
+  color: #000000;
+}

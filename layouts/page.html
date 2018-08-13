@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+    {{ template "assets" . }}
+  </head>
+  <body>
+    <h1>{{ .Title }}</h1>
+    <span class="date">{{ .DateString }}</span>
+    <span class="tags">{{ .Tags }}</span>
+    {{ .Content }}
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+    {{ template "assets" . }}
+  </head>
+  <body>
+    <div id="index">
+      <ul>
+        {{ range .Children }}
+          <li>{{ .Link }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </body>
+</html>
