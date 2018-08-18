@@ -1,0 +1,20 @@
+version: 2.0
+
+jobs:
+  deploy:
+    docker:
+      - image: circleci/golang:1.10
+    steps:
+      - checkout
+      - run: go install github.com/aedipamoss/stationery
+      - run: stationery
+      - run: ./.circleci/deploy-gh-pages.sh
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
