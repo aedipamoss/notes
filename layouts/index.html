@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>{{ .Title }}</title>
-    {{ .MetaTags }}
-    {{ template "assets" . }}
+    {{ .Headers }}
   </head>
   <body>
     <div id="index">
-      <ul>
-        {{ range .Children }}
-          <li>{{ .Link }}</li>
-        {{ end }}
-      </ul>
+      {{ .Index }}
     </div>
   </body>
 </html>
