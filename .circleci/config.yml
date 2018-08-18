@@ -6,8 +6,11 @@ jobs:
       - image: circleci/golang:1.10
     steps:
       - checkout
-      - run: go install github.com/aedipamoss/stationery
+      - run: go get github.com/aedipamoss/stationery
       - run: stationery
+      - store_artifacts:
+          path: out
+          destination: site
       - run: ./.circleci/deploy-gh-pages.sh
 
 workflows:
