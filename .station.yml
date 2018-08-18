@@ -2,6 +2,9 @@ title: "TODO: Add a title"
 description: "TODO: Add a description"
 source: src
 output: out
+site-url: https://aedipamoss.github.io/notes
+image: images/avatar.jpg
+twitter: aedipamoss
 assets:
   css:
     - style.css
